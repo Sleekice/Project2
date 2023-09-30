@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Project2</string>
+    <string name="title_people">People</string>
+    <string name="title_rooms">Rooms</string>
+
+    <string name="title_notifications">Notifications</string>
+
+    <string name="trademark">Sleek Appers</string>
+
+</resources>

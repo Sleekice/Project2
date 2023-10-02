@@ -39,7 +39,19 @@ android {
 }
 
 dependencies {
+    //Glide Dependency
+    implementation ("com.github.bumptech.glide:glide:4.16.0")
 
+    //Recycler View Dependency
+    implementation("androidx.recyclerview:recyclerview:1.3.1")
+    implementation("androidx.recyclerview:recyclerview-selection:1.1.0")
+    implementation ("androidx.appcompat:appcompat:1.3.0")
+
+    //Annotation Processor for Image in Data Class File
+    annotationProcessor("com.github.bumptech.glide:compiler:4.12.0")
+
+    // For control over item selection of both touch and mouse driven selection
+    implementation("androidx.recyclerview:recyclerview-selection:1.1.0")
 
     //Used for Splash Screen
     implementation("androidx.core:core-splashscreen:1.0.1")
@@ -57,6 +69,9 @@ dependencies {
     implementation("com.google.code.gson:gson:2.10.1")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
 
+
+    //Card View
+    implementation("androidx.cardview:cardview:1.0.0")
 
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")

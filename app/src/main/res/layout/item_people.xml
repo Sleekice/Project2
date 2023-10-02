@@ -10,10 +10,11 @@
     tools:ignore="This is For The People Recycler View."
     >
 
+
     <!-- This XML File is For the People Recycler View -->
 
     <ImageView
-        android:id="@+id/catImage"
+        android:id="@+id/personImage"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="8dp"
@@ -24,27 +25,27 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
-        android:id="@+id/catTitle"
+        android:id="@+id/firstName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="TextView"
+        android:text="Maggie"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toEndOf="@+id/catImage"
+        app:layout_constraintStart_toEndOf="@+id/personImage"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/catDescription"
+        android:id="@+id/email"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="12dp"
-        android:text="TextView"
+        android:text="Brekke"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toEndOf="@+id/catImage"
-        app:layout_constraintTop_toBottomOf="@+id/catTitle" />
+        app:layout_constraintStart_toEndOf="@+id/personImage"
+        app:layout_constraintTop_toBottomOf="@+id/firstName" />
 </androidx.constraintlayout.widget.ConstraintLayout>

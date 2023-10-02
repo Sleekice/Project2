@@ -7,21 +7,27 @@
     android:layout_height="wrap_content"
     android:layout_marginStart="16dp"
     android:layout_marginTop="8dp"
-    android:layout_marginEnd="16dp">
+    android:layout_marginEnd="16dp"
+    android:paddingBottom="10dp"
+    >
 
 
-    <ImageView
-        android:id="@+id/imageView"
+    <TextView
+        android:id="@+id/room_number"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:text="#"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:paddingBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/toptext"
+        app:layout_constraintEnd_toStartOf="@+id/occupied"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
-        android:id="@+id/toptext"
+        android:id="@+id/occupied"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="6dp"
@@ -29,14 +35,14 @@
         android:maxLines="2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toEndOf="@id/imageView"
+        app:layout_constraintStart_toEndOf="@id/room_number"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Maggie Brekke"
+        tools:text="Available?"
         android:textSize="20sp"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/bottomtext"
+        android:id="@+id/max_occupancied"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="6dp"
@@ -45,7 +51,7 @@
         android:maxLines="2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/toptext"
-        tools:text="Email Address"/>
+        app:layout_constraintStart_toEndOf="@+id/room_number"
+        app:layout_constraintTop_toBottomOf="@+id/occupied"
+        tools:text="Max Occupancy: 53539"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
